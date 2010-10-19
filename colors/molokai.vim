@@ -118,7 +118,7 @@ else
    hi Comment         guifg=#465457
    hi CursorLine                    guibg=#293739
    hi CursorColumn                  guibg=#293739
-   hi LineNr          guifg=#BCBCBC guibg=#232526
+   hi LineNr          guifg=#555555 guibg=#232526
    hi NonText         guifg=#BCBCBC guibg=#232526
 end
 
