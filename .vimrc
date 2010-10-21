@@ -1,7 +1,7 @@
 " Look n Feel: Syntax Highlighting, Line Numbers, Fonts, and Color Scheme
 syntax on
 set number
-colorscheme madeofcode
+colorscheme brocode
 set guifont=Droid\ Sans\ Mono:h12
 set ruler " Line & Column #
 
@@ -35,7 +35,7 @@ set vb t_vb=
 set wildmode=list:longest
 
 " Zen Coding Settings
-let g:user_zen_expandabbr_key='<D-e>'
+" let g:user_zen_expandabbr_key='<D-e>'
 
 " Gist Plugin Settings
 let g:gist_clip_command='pbcopy'
@@ -68,6 +68,11 @@ noremap <Leader>h :call HexHighlight()<Return>
 " PHP Debugger
 noremap <Leader>d :python debugger_run()<Return>
 
+" Filetype Settings
+filetype on
+filetype plugin on
+filetype indent on
+
 " Transmit Settings
 nnoremap <Leader>u :call TransmitFtpSendFile()<CR>
 
@@ -82,3 +87,16 @@ noremap <Leader>wm ! open https://developer.mozilla.org/en/JavaScript<CR>
 
 " Open Current File
 noremap <Leader>os ! open http://%<CR>
+
+" JSLint Settings
+" au FileType javascript,jquery noremap <Leader>js :JSLintUpdate<CR>
+
+" Omni Completion
+
+inoremap <D-e> <C-X><C-O>
+
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS 
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags 
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS 
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete 
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
