@@ -6,7 +6,7 @@
 let s:HexColored = 0
 let s:HexColors = []
 
-map <Leader><F2> :call HexHighlight()<Return>
+" map <Leader>c :call HexHighlight()<Return>
 function! HexHighlight()
     if has("gui_running")
         if s:HexColored == 0
