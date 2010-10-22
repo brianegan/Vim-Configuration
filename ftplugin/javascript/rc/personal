@@ -1,0 +1,3 @@
+/*jslint browser: true, onevar: true, undef: true, eqeqeq: true, bitwise: true, regexp: true, newcap: true, immed: true */
+/*global jQuery, $, module, test, ok, expect, equals, same, asyncTest, QUnit, start, stop */
+  
