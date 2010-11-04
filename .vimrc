@@ -4,6 +4,7 @@ set number
 colorscheme brocode
 set guifont=Droid\ Sans\ Mono:h12
 set ruler " Line & Column #
+set cursorline " Highlight current line
 
 " Set our <Leader> key which can be used later
 let mapleader=","
@@ -35,7 +36,7 @@ set vb t_vb=
 set wildmode=list:longest
 
 " Zen Coding Settings
-" let g:user_zen_expandabbr_key='<D-e>'
+" let g:sparkupExecuteMapping='<D-e>'
 
 " Gist Plugin Settings
 let g:gist_clip_command='pbcopy'
@@ -100,3 +101,10 @@ autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS 
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete 
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+" ColorHex
+noremap <Leader>c :ColorHEX
+
+" Right margin highlight
+highlight rightMargin ctermfg=lightblue
+match rightMargin /.\%>79v/

@@ -14,11 +14,11 @@ let g:colors_name = "brocode"
 
 hi Cursor  guifg=NONE guibg=#00ffff gui=NONE
 hi Visual  guifg=NONE guibg=#05448d gui=NONE
-hi CursorLine  guifg=NONE guibg=#090a1b gui=NONE
+"hi CursorLine  guifg=NONE guibg=#090a1b gui=NONE
 hi CursorColumn  guifg=NONE guibg=#090a1b gui=NONE
-hi LineNr  guifg=#81818a guibg=#090a1b gui=NONE
+"hi LineNr  guifg=#81818a guibg=#090a1b gui=NONE
 hi VertSplit  guifg=#363745 guibg=#363745 gui=NONE
-hi MatchParen  guifg=#ff3854 guibg=NONE gui=NONE
+"hi MatchParen  guifg=#ff3854 guibg=NONE gui=NONE
 hi StatusLine  guifg=#f8f8f8 guibg=#363745 gui=bold
 hi StatusLineNC  guifg=#f8f8f8 guibg=#363745 gui=NONE
 hi Pmenu  guifg=#6fd3ff guibg=NONE gui=NONE
@@ -30,10 +30,10 @@ hi Folded  guifg=#c050c2 guibg=#090a1b gui=NONE
 hi Normal  guifg=#f8f8f8 guibg=#090a1b gui=NONE
 hi Boolean  guifg=#0a9cff guibg=NONE gui=NONE
 hi Character  guifg=#0a9cff guibg=NONE gui=NONE
-hi Comment guifg=#c050c2 guibg=#000000 gui=italic
-hi Conditional  guifg=#ff3854 guibg=NONE gui=NONE
+"hi Comment guifg=#c050c2 guibg=#000000 gui=italic
+"hi Conditional  guifg=#ff3854 guibg=NONE gui=NONE
 hi Constant  guifg=#0a9cff guibg=NONE gui=NONE
-hi Define  guifg=#ff3854 guibg=NONE gui=NONE
+"hi Define  guifg=#ff3854 guibg=NONE gui=NONE
 hi ErrorMsg  guifg=NONE guibg=NONE gui=NONE
 hi WarningMsg  guifg=NONE guibg=NONE gui=NONE
 hi Float  guifg=#0a9cff guibg=NONE gui=NONE
@@ -43,8 +43,8 @@ hi Keyword  guifg=#ff3854 guibg=NONE gui=NONE
 hi Label  guifg=#8fff58 guibg=#102522 gui=NONE
 hi NonText  guifg=#353c4f guibg=#090a1b gui=NONE
 hi Number  guifg=#0a9cff guibg=NONE gui=NONE
-hi Operator  guifg=#ff3854 guibg=NONE gui=NONE
-hi PreProc  guifg=#ff3854 guibg=NONE gui=NONE
+"hi Operator  guifg=#ff3854 guibg=NONE gui=NONE
+"hi PreProc  guifg=#ff3854 guibg=NONE gui=NONE
 hi Special  guifg=#f8f8f8 guibg=NONE gui=NONE
 hi SpecialKey  guifg=#353c4f guibg=#090a1b gui=NONE
 hi Statement  guifg=#ff3854 guibg=NONE gui=NONE
@@ -104,6 +104,7 @@ hi cssBraces  guifg=NONE guibg=NONE gui=NONE
 
 " Brian's Customizations
 hi Comment guifg=#767788 guibg=#000000 gui=italic
+hi CursorLine  guifg=NONE guibg=#1C2B44 gui=NONE
 hi LineNr  guifg=#35353C guibg=NONE gui=NONE
 hi Conditional  guifg=#F92672 guibg=NONE gui=NONE
 hi MatchParen  guifg=#F92672 guibg=NONE gui=NONE
@@ -143,3 +144,4 @@ hi jVisibility guifg=#6fd3ff guibg=NONE gui=NONE
 hi jChildFIlters guifg=#6fd3ff guibg=NONE gui=NONE
 hi jForms guifg=#6fd3ff guibg=NONE gui=NONE
 hi jFormFilters guifg=#6fd3ff guibg=NONE gui=NONE
+
