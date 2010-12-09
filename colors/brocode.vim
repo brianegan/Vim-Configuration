@@ -30,7 +30,7 @@ hi Folded  guifg=#c050c2 guibg=#090a1b gui=NONE
 hi Normal  guifg=#f8f8f8 guibg=#090a1b gui=NONE
 hi Boolean  guifg=#0a9cff guibg=NONE gui=NONE
 hi Character  guifg=#0a9cff guibg=NONE gui=NONE
-"hi Comment guifg=#c050c2 guibg=#000000 gui=italic
+"hi Comment guifg=#c050c2 guibg=#090a1b gui=italic
 "hi Conditional  guifg=#ff3854 guibg=NONE gui=NONE
 hi Constant  guifg=#0a9cff guibg=NONE gui=NONE
 "hi Define  guifg=#ff3854 guibg=NONE gui=NONE
@@ -39,22 +39,24 @@ hi WarningMsg  guifg=NONE guibg=NONE gui=NONE
 hi Float  guifg=#0a9cff guibg=NONE gui=NONE
 hi Function  guifg=#6fd3ff guibg=NONE gui=NONE
 hi Identifier  guifg=#99cf50 guibg=NONE gui=NONE
-hi Keyword  guifg=#ff3854 guibg=NONE gui=NONE
-hi Label  guifg=#8fff58 guibg=#102522 gui=NONE
+hi Keyword  guifg=#6fd3ff guibg=NONE gui=NONE
+hi Label  guifg=#8fff58 guibg=NONE gui=NONE
 hi NonText  guifg=#353c4f guibg=#090a1b gui=NONE
 hi Number  guifg=#0a9cff guibg=NONE gui=NONE
 "hi Operator  guifg=#ff3854 guibg=NONE gui=NONE
 "hi PreProc  guifg=#ff3854 guibg=NONE gui=NONE
 hi Special  guifg=#f8f8f8 guibg=NONE gui=NONE
 hi SpecialKey  guifg=#353c4f guibg=#090a1b gui=NONE
-hi Statement  guifg=#ff3854 guibg=NONE gui=NONE
-hi StorageClass  guifg=#99cf50 guibg=NONE gui=NONE
-hi String  guifg=#F1E670 guibg=#102522 gui=NONE
+hi Statement  guifg=#0A9CFF guibg=NONE gui=NONE
+hi StorageClass  guifg=#FFFFFF guibg=NONE gui=NONE
+" hi String  guifg=#F1E670 guibg=#102522 gui=NONE
 hi Tag  guifg=#6fd3ff guibg=NONE gui=NONE
 hi Title  guifg=#f8f8f8 guibg=NONE gui=bold
-hi Todo  guifg=#c050c2 guibg=#000000 gui=inverse,bold,italic
+hi Todo  guifg=#c050c2 guibg=NONE gui=inverse,bold,italic
 hi Type  guifg=#6fd3ff guibg=NONE gui=NONE
 hi Underlined  guifg=NONE guibg=NONE gui=underline
+
+" Ruby
 hi rubyClass  guifg=#ff3854 guibg=NONE gui=NONE
 hi rubyFunction  guifg=#6fd3ff guibg=NONE gui=NONE
 hi rubyInterpolationDelimiter  guifg=NONE guibg=NONE gui=NONE
@@ -65,8 +67,6 @@ hi rubyBlockParameter  guifg=#588aff guibg=NONE gui=NONE
 hi rubyInstanceVariable  guifg=#588aff guibg=NONE gui=NONE
 hi rubyInclude  guifg=#ff3854 guibg=NONE gui=NONE
 hi rubyGlobalVariable  guifg=#588aff guibg=NONE gui=NONE
-hi rubyRegexp  guifg=#e9c062 guibg=NONE gui=NONE
-hi rubyRegexpDelimiter  guifg=#e9c062 guibg=NONE gui=NONE
 hi rubyEscape  guifg=#0a9cff guibg=NONE gui=NONE
 hi rubyControl  guifg=#ff3854 guibg=NONE gui=NONE
 hi rubyClassVariable  guifg=#588aff guibg=NONE gui=NONE
@@ -86,29 +86,36 @@ hi htmlEndTag  guifg=#45c1ea guibg=NONE gui=NONE
 hi htmlTagName  guifg=#45c1ea guibg=NONE gui=NONE
 hi htmlArg  guifg=#45c1ea guibg=NONE gui=NONE
 hi htmlSpecialChar  guifg=#0a9cff guibg=NONE gui=NONE
+
+" JS
 hi javaScriptFunction  guifg=#99cf50 guibg=NONE gui=NONE
 hi javaScriptRailsFunction  guifg=#F1E670 guibg=NONE gui=NONE
 hi javaScriptBraces  guifg=NONE guibg=NONE gui=NONE
+
+" YAML
 hi yamlKey  guifg=#6fd3ff guibg=NONE gui=NONE
 hi yamlAnchor  guifg=#588aff guibg=NONE gui=NONE
 hi yamlAlias  guifg=#588aff guibg=NONE gui=NONE
 hi yamlDocumentHeader  guifg=#8fff58 guibg=#102522 gui=NONE
+
+" CSS
 hi cssURL  guifg=#588aff guibg=NONE gui=NONE
 hi cssFunctionName  guifg=#F1E670 guibg=NONE gui=NONE
 hi cssColor  guifg=#0a9cff guibg=NONE gui=NONE
 hi cssPseudoClassId  guifg=#6fd3ff guibg=NONE gui=NONE
 hi cssClassName  guifg=#6fd3ff guibg=NONE gui=NONE
 hi cssValueLength  guifg=#0a9cff guibg=NONE gui=NONE
-hi cssCommonAttr  guifg=#cf6a4c guibg=NONE gui=NONE
-hi cssBraces  guifg=NONE guibg=NONE gui=NONE
+hi cssCommonAttr  guifg=#6fd3ff guibg=NONE gui=NONE
+hi cssBraces  guifg=#99cf50 guibg=NONE gui=NONE
 
 " Brian's Customizations
-hi Comment guifg=#767788 guibg=#000000 gui=italic
-hi CursorLine  guifg=NONE guibg=#1C2B44 gui=NONE
-hi LineNr  guifg=#35353C guibg=NONE gui=NONE
-hi Conditional  guifg=#F92672 guibg=NONE gui=NONE
-hi MatchParen  guifg=#F92672 guibg=NONE gui=NONE
-hi Define  guifg=#F92672 guibg=NONE gui=NONE
+" hi String guifg=#8FFF58 guibg=#003333 gui=NONE " String with BG
+hi String guifg=#8FFF58 guibg=NONE gui=NONE
+hi Comment guifg=#656F96 guibg=NONE gui=italic
+hi LineNr  guifg=#35353C guibg=#070810 gui=NONE
+hi Conditional  guifg=#45c1ea guibg=NONE gui=NONE
+hi MatchParen  guifg=#AE81FF guibg=NONE gui=NONE
+hi Define  guifg=#99cf50 guibg=NONE gui=NONE
 hi Operator  guifg=#AE81FF guibg=NONE gui=NONE
 hi PreProc  guifg=#AE81FF guibg=NONE gui=NONE
 
@@ -116,10 +123,12 @@ hi PreProc  guifg=#AE81FF guibg=NONE gui=NONE
 
 "" JavaScript
 hi javaScriptType guifg=#0a9cff guibg=NONE gui=NONE
-hi javaScriptLabel guifg=#FFFFFF guibg=#102522 gui=NONE 
-hi javaScriptStringS guifg=#8FFF58 guibg=#003333 gui=NONE
-hi javaScriptStringD guifg=#8FFF58 guibg=#003333 gui=NONE
-hi javaScriptRegexpString guifg=#F1E670 guibg=NONE gui=NONE
+hi javaScriptLabel guifg=#FFFFFF guibg=NONE gui=NONE 
+" hi javaScriptStringS guifg=#8FFF58 guibg=#003333 gui=NONE
+" hi javaScriptStringD guifg=#8FFF58 guibg=#003333 gui=NONE
+hi javaScriptStringS guifg=#8FFF58 guibg=NONE gui=NONE
+hi javaScriptStringD guifg=#8FFF58 guibg=NONE gui=NONE
+hi javaScriptRegexpString guifg=#F6E57A guibg=NONE gui=NONE
 
 "" JSDoc
 hi javaScriptDocTags guifg=#0a9cff guibg=NONE gui=NONE
@@ -145,3 +154,5 @@ hi jChildFIlters guifg=#6fd3ff guibg=NONE gui=NONE
 hi jForms guifg=#6fd3ff guibg=NONE gui=NONE
 hi jFormFilters guifg=#6fd3ff guibg=NONE gui=NONE
 
+
+hi CursorLine  guifg=NONE guibg=#10172B gui=NONE

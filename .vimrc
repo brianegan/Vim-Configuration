@@ -2,7 +2,7 @@
 syntax on
 set number
 colorscheme brocode
-set guifont=Droid\ Sans\ Mono:h12
+set guifont=Liberation\ Mono:h12
 set ruler " Line & Column #
 set cursorline " Highlight current line
 
@@ -13,14 +13,14 @@ let mapleader=","
 set incsearch
 
 " Sir Spells Wrong a Lot
-set spell
+" set spell
 
 " Wrapping makes Brian angry
 set nowrap
 
 " Tab Settings
 set tabstop=2
-set shiftwidth=2
+set shiftwidth=1 " I don't like this. It should be 2, but is being doubled somewhere.
 
 " Autoindenting
 set smartindent
@@ -69,11 +69,6 @@ noremap <Leader>h :call HexHighlight()<Return>
 " PHP Debugger
 noremap <Leader>d :python debugger_run()<Return>
 
-" Filetype Settings
-filetype on
-filetype plugin on
-filetype indent on
-
 " Transmit Settings
 nnoremap <Leader>u :call TransmitFtpSendFile()<CR>
 
@@ -89,6 +84,10 @@ noremap <Leader>wm ! open https://developer.mozilla.org/en/JavaScript<CR>
 " Open Current File
 noremap <Leader>os ! open http://%<CR>
 
+" CoffeeScript Compiler
+let coffee_compile_on_save=1
+" au BufWritePost *.coffee silent !coffee -c <afile> &
+
 " JSLint Settings
 " au FileType javascript,jquery noremap <Leader>js :JSLintUpdate<CR>
 
@@ -103,8 +102,16 @@ autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 " ColorHex
-noremap <Leader>c :ColorHEX
+noremap <Leader>c :ColorHEX<CR>
 
 " Right margin highlight
 highlight rightMargin ctermfg=lightblue
 match rightMargin /.\%>79v/
+
+" Markdown Preview
+map <leader>p :Mm<CR>
+
+" Filetype Settings
+filetype on
+filetype plugin on
+filetype indent on
