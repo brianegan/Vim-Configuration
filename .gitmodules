@@ -43,3 +43,6 @@
 [submodule "bundle/transmit"]
 	path = bundle/transmit
 	url = https://github.com/brianegan/transmit-vim.git
+[submodule "bundle/gist"]
+	path = bundle/gist
+	url = https://github.com/mattn/gist-vim.git
