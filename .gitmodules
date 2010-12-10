@@ -31,3 +31,9 @@
 [submodule "bundle/markdown"]
 	path = bundle/markdown
 	url = https://github.com/hallison/vim-markdown.git
+[submodule "bundle/jslint"]
+	path = bundle/jslint
+	url = https://github.com/hallettj/jslint.vim.git
+[submodule "bundle/zencoding"]
+	path = bundle/zencoding
+	url = https://github.com/mattn/zencoding-vim.git
