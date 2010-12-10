@@ -43,3 +43,6 @@
 [submodule "bundle/markdown-preview"]
 	path = bundle/markdown-preview
 	url = https://github.com/robgleeson/vim-markdown-preview.git
+[submodule "bundle/transmit"]
+	path = bundle/transmit
+	url = https://github.com/brianegan/transmit-vim.git
