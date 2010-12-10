@@ -40,3 +40,6 @@
 [submodule "bundles/gist"]
 	path = bundles/gist
 	url = https://github.com/mattn/gist-vim.git
+[submodule "bundle/git"]
+	path = bundle/git
+	url = https://github.com/motemen/git-vim.git
