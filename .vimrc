@@ -100,6 +100,9 @@ noremap <Leader>c :ColorHEX<CR>
 " Markdown Preview
 map <leader>p :Mm<CR>
 
+" Zen Coding Settings
+let g:user_zen_expandabbr_key='<C-e>'
+
 " Filetype Settings
 filetype off " Stupid, necessary hack
 filetype on
