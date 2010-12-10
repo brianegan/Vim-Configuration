@@ -13,9 +13,6 @@
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = https://github.com/msanders/snipmate.vim.git
-[submodule "autoload"]
-	path = autoload
-	url = https://github.com/tpope/vim-pathogen.git
 [submodule "bundle/cucumber"]
 	path = bundle/cucumber
 	url = https://github.com/tpope/vim-cucumber.git
