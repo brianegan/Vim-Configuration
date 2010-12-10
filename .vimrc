@@ -1,5 +1,5 @@
 " Kickoff Pathogen!
-call pathogen#runtime_append_all_bundles()
+call pathogen#runtime_append_all_bundles() 
 
 " Look n Feel: Syntax Highlighting, Line Numbers, Fonts, and Color Scheme
 syntax on
@@ -101,6 +101,7 @@ noremap <Leader>c :ColorHEX<CR>
 map <leader>p :Mm<CR>
 
 " Filetype Settings
+filetype off " Stupid, necessary hack
 filetype on
 filetype plugin on
 filetype indent on
