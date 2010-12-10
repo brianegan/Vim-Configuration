@@ -15,6 +15,9 @@ let mapleader=","
 " Search Settings
 set incsearch
 
+" Sir Spells Wrong a Lot
+" set spell
+
 " Wrapping makes Brian angry
 set nowrap
 
@@ -34,6 +37,9 @@ set vb t_vb=
 
 " For Autocompletion
 set wildmode=list:longest
+
+" Zen Coding Settings
+" let g:sparkupExecuteMapping='<D-e>'
 
 " Gist Plugin Settings
 let g:gist_clip_command='pbcopy'
@@ -83,11 +89,15 @@ noremap <Leader>os ! open http://%<CR>
 
 " CoffeeScript Compiler
 let coffee_compile_on_save=1
+" au BufWritePost *.coffee silent !coffee -c <afile> &
+
+" JSLint Settings
+" au FileType javascript,jquery noremap <Leader>js :JSLintUpdate<CR>
 
 " Omni Completion
+
 inoremap <D-e> <C-X><C-O>
 
-" Omni Completion by Filetype
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS 
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags 
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS 
@@ -96,6 +106,10 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 " ColorHex
 noremap <Leader>c :ColorHEX<CR>
+
+" Right margin highlight
+highlight rightMargin ctermfg=lightblue
+match rightMargin /.\%>79v/
 
 " Markdown Preview
 map <leader>p :Mm<CR>
