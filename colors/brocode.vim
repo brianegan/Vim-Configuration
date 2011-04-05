@@ -1,13 +1,13 @@
 " Vim color file
 " Converted from Textmate theme Made of Code using Coloration v0.2.5 (http://github.com/sickill/coloration)
 
-set background=dark
 highlight clear
 
 if exists("syntax_on")
   syntax reset
 endif
 
+set transparency=8
 let g:colors_name = "brocode"
 
 " Orig
@@ -27,7 +27,7 @@ hi IncSearch  guifg=NONE guibg=#233466 gui=NONE
 hi Search  guifg=NONE guibg=#233466 gui=NONE
 hi Directory  guifg=#0a9cff guibg=NONE gui=NONE
 hi Folded  guifg=#c050c2 guibg=#090a1b gui=NONE
-hi Normal  guifg=#f8f8f8 guibg=#090a1b gui=NONE
+hi Normal  guifg=#f8f8f8 guibg=#090A1B gui=NONE
 hi Boolean  guifg=#0a9cff guibg=NONE gui=NONE
 hi Character  guifg=#0a9cff guibg=NONE gui=NONE
 "hi Comment guifg=#c050c2 guibg=#090a1b gui=italic
@@ -86,6 +86,7 @@ hi htmlEndTag  guifg=#45c1ea guibg=NONE gui=NONE
 hi htmlTagName  guifg=#45c1ea guibg=NONE gui=NONE
 hi htmlArg  guifg=#45c1ea guibg=NONE gui=NONE
 hi htmlSpecialChar  guifg=#0a9cff guibg=NONE gui=NONE
+hi htmlString guifg=#8FFF58 guibg=#003333 gui=NONE
 
 " JS
 hi javaScriptFunction  guifg=#99cf50 guibg=NONE gui=NONE
@@ -106,13 +107,13 @@ hi cssPseudoClassId  guifg=#6fd3ff guibg=NONE gui=NONE
 hi cssClassName  guifg=#6fd3ff guibg=NONE gui=NONE
 hi cssValueLength  guifg=#0a9cff guibg=NONE gui=NONE
 hi cssCommonAttr  guifg=#6fd3ff guibg=NONE gui=NONE
-hi cssBraces  guifg=#99cf50 guibg=NONE gui=NONE
+hi cssBraces  guifg=#FFF7A0 guibg=NONE gui=NONE
 
 " Brian's Customizations
 " hi String guifg=#8FFF58 guibg=#003333 gui=NONE " String with BG
-hi String guifg=#8FFF58 guibg=NONE gui=NONE
+hi String guifg=#8FFF58 guibg=#003333 gui=NONE
 hi Comment guifg=#656F96 guibg=NONE gui=italic
-hi LineNr  guifg=#35353C guibg=#070810 gui=NONE
+hi LineNr  guifg=#35353C guibg=NONE gui=NONE
 hi Conditional  guifg=#45c1ea guibg=NONE gui=NONE
 hi MatchParen  guifg=#AE81FF guibg=NONE gui=NONE
 hi Define  guifg=#99cf50 guibg=NONE gui=NONE
@@ -138,7 +139,7 @@ hi javaScriptDocComment guifg=#0a9cff guibg=NONE gui=NONE
 hi jQuery guifg=#0a9cff guibg=NONE gui=NONE
 hi jManipulation guifg=#6fd3ff guibg=NONE gui=NONE
 hi jCore guifg=#6fd3ff guibg=NONE gui=NONE
-hi jTraversing guifg=#8fff58 guibg=NONE gui=NONE
+hi jTraversing guifg=#6fd3ff guibg=NONE gui=NONE
 hi jAttributes guifg=#6fd3ff guibg=NONE gui=NONE
 hi jCSS guifg=#6fd3ff guibg=NONE gui=NONE
 hi jEvents guifg=#6fd3ff guibg=NONE gui=NONE
@@ -153,6 +154,22 @@ hi jVisibility guifg=#6fd3ff guibg=NONE gui=NONE
 hi jChildFIlters guifg=#6fd3ff guibg=NONE gui=NONE
 hi jForms guifg=#6fd3ff guibg=NONE gui=NONE
 hi jFormFilters guifg=#6fd3ff guibg=NONE gui=NONE
+hi jClass guifg=#6fd3ff guibg=NONE gui=NONE
+hi jId guifg=#6fd3ff guibg=NONE gui=NONE
+hi jOperators guifg=#6fd3ff guibg=NONE gui=NONE
+hi jBasicFilters guifg=#6fd3ff guibg=NONE gui=NONE
+hi jContentFilters guifg=#6fd3ff guibg=NONE gui=NONE
+hi jVisibility guifg=#6fd3ff guibg=NONE gui=NONE
+hi jChildFilters guifg=#6fd3ff guibg=NONE gui=NONE
+hi jForms guifg=#6fd3ff guibg=NONE gui=NONE
+hi jFormFilters guifg=#6fd3ff guibg=NONE gui=NONE
 
 
 hi CursorLine  guifg=NONE guibg=#10172B gui=NONE
+
+" CoffeeScript
+hi coffeeRepeat guifg=#FFF7A0 guibg=NONE
+hi coffeeAssign guifg=#FFFFFF guibg=NONE
+hi coffeeString guifg=#8FFF58 guibg=#003333 gui=NONE
+hi coffeeObject guifg=#FFFFFF guibg=NONE
+hi coffeeComment guifg=#656F96 guibg=NONE gui=italic
