@@ -5,7 +5,7 @@ call pathogen#runtime_append_all_bundles()
 syntax on
 set number
 colorscheme brocode
-set guifont=Liberation\ Mono:h12
+set guifont=Monaco:h12
 set ruler " Line & Column #
 set cursorline " Highlight current line
 
@@ -23,7 +23,7 @@ set nowrap
 
 " Tab Settings
 set tabstop=2
-set shiftwidth=1 " I don't like this. It should be 2, but is being doubled somewhere.
+set shiftwidth=2 " I don't like this. It should be 2, but is being doubled somewhere.
 
 " Autoindenting
 set smartindent
@@ -90,6 +90,9 @@ noremap <Leader>os ! open http://%<CR>
 " CoffeeScript Compiler
 let coffee_compile_on_save=1
 " au BufWritePost *.coffee silent !coffee -c <afile> &
+
+" Easy Motion
+let g:EasyMotion_leader_key = '<Leader>w'
 
 " JSLint Settings
 " au FileType javascript,jquery noremap <Leader>js :JSLintUpdate<CR>

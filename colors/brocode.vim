@@ -7,11 +7,10 @@ if exists("syntax_on")
   syntax reset
 endif
 
-set transparency=8
+set transparency=7
 let g:colors_name = "brocode"
 
 " Orig
-
 hi Cursor  guifg=NONE guibg=#00ffff gui=NONE
 hi Visual  guifg=NONE guibg=#05448d gui=NONE
 "hi CursorLine  guifg=NONE guibg=#090a1b gui=NONE
@@ -161,8 +160,6 @@ hi jVisibility guifg=#6fd3ff guibg=NONE gui=NONE
 hi jChildFilters guifg=#6fd3ff guibg=NONE gui=NONE
 hi jForms guifg=#6fd3ff guibg=NONE gui=NONE
 hi jFormFilters guifg=#6fd3ff guibg=NONE gui=NONE
-
-
 hi CursorLine  guifg=NONE guibg=#10172B gui=NONE
 
 " CoffeeScript
