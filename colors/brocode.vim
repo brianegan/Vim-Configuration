@@ -168,3 +168,7 @@ hi coffeeAssign guifg=#FFFFFF guibg=NONE
 hi coffeeString guifg=#8FFF58 guibg=#003333 gui=NONE
 hi coffeeObject guifg=#FFFFFF guibg=NONE
 hi coffeeComment guifg=#656F96 guibg=NONE gui=italic
+
+" Diffs
+hi diffRemoved  guifg=#ff3854 guibg=NONE gui=NONE
+hi diffAdded guifg=#99cf50 guibg=NONE gui=NONE
