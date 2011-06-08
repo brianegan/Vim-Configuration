@@ -1,5 +1,6 @@
 " Kickoff Pathogen!
 call pathogen#runtime_append_all_bundles() 
+call pathogen#helptags()
 
 " Look n Feel: Syntax Highlighting, Line Numbers, Fonts, and Color Scheme
 syntax on
@@ -22,6 +23,7 @@ set incsearch
 set nowrap
 
 " Tab Settings
+set expandtab
 set tabstop=2
 set shiftwidth=2 " I don't like this. It should be 2, but is being doubled somewhere.
 
@@ -125,3 +127,6 @@ filetype off " Stupid, necessary hack
 filetype on
 filetype plugin on
 filetype indent on
+
+" Fugitive Statusline
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P 
