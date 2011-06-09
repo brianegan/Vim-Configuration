@@ -44,7 +44,7 @@ set vb t_vb=
 " For Autocompletion
 set wildmode=list:longest
 
-" Zen Coding Settings
+" Sparkup Settings
 " let g:sparkupExecuteMapping='<D-e>'
 
 " Gist Plugin Settings
@@ -104,8 +104,7 @@ let g:EasyMotion_leader_key = '<Leader>w'
 " au FileType javascript,jquery noremap <Leader>js :JSLintUpdate<CR>
 
 " Omni Completion
-
-inoremap <D-e> <C-X><C-O>
+" inoremap <D-e> <C-X><C-O>
 
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS 
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags 
@@ -116,15 +115,11 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 " ColorHex
 noremap <Leader>c :ColorHEX<CR>
 
-" Right margin highlight
-highlight rightMargin ctermfg=lightblue
-match rightMargin /.\%>79v/
-
 " Markdown Preview
-map <leader>p :Mm<CR>
+autocmd Filetype mkd,markdown,md map <leader>p :Me<CR>
 
 " Zen Coding Settings
-let g:user_zen_expandabbr_key='<C-e>'
+" let g:user_zen_expandabbr_key='<C-e>'
 
 " Filetype Settings
 filetype off " Stupid, necessary hack
