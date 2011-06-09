@@ -15,6 +15,9 @@ let mapleader=","
 
 " Search Settings
 set incsearch
+set hlsearch
+set ignorecase
+set smartcase
 
 " Sir Spells Wrong a Lot
 " set spell
@@ -23,9 +26,10 @@ set incsearch
 set nowrap
 
 " Tab Settings
-set expandtab
+set expandtab " Soft Tabs
 set tabstop=2
-set shiftwidth=2 " I don't like this. It should be 2, but is being doubled somewhere.
+set shiftwidth=2
+set softtabstop=2
 
 " Autoindenting
 set smartindent
