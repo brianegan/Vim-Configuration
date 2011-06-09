@@ -26,10 +26,6 @@
 	path = bundle/haml-sass
 	url = https://github.com/tpope/vim-haml.git
   ignore = untracked
-[submodule "bundle/markdown"]
-	path = bundle/markdown
-	url = https://github.com/hallison/vim-markdown.git
-  ignore = untracked
 [submodule "bundle/jslint"]
 	path = bundle/jslint
 	url = https://github.com/hallettj/jslint.vim.git
@@ -73,4 +69,8 @@
 [submodule "bundle/markdown-preview"]
 	path = bundle/markdown-preview
   url = https://github.com/waylan/vim-markdown-extra-preview.git
+  ignore = untracked
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = https://github.com/ervandew/supertab.git
   ignore = untracked
