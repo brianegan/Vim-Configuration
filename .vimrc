@@ -129,3 +129,7 @@ filetype indent on
 
 " Fugitive Statusline
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P 
+
+" Swap Files are annoying
+set backupdir=~/tmp/vim_swp
+set directory=~/tmp/vim_swp
