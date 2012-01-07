@@ -6,7 +6,7 @@ call pathogen#helptags()
 syntax on
 set number
 colorscheme brocode
-set guifont=Monaco:h12
+set guifont=Menlo:h12
 set ruler " Line & Column #
 set cursorline " Highlight current line
 
@@ -19,8 +19,8 @@ set hlsearch
 set ignorecase
 set smartcase
 
-" Sir Spells Wrong a Lot
-" set spell
+" Don't lose undo history when changing buffers
+set hid
 
 " Wrapping makes Brian angry
 set nowrap
@@ -30,6 +30,7 @@ set expandtab " Soft Tabs
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
+set list listchars=tab:\ \ ,trail:·
 
 " Autoindenting
 set smartindent
@@ -43,9 +44,6 @@ set vb t_vb=
 
 " For Autocompletion
 set wildmode=list:longest
-
-" Sparkup Settings
-" let g:sparkupExecuteMapping='<D-e>'
 
 " Gist Plugin Settings
 let g:gist_clip_command='pbcopy'
@@ -61,7 +59,7 @@ let g:CommandTMaxHeight=15
 let g:bufExplorerShowRelativePath=1
 
 " NERDtree
-noremap <Leader>r :NERDTree<Enter>
+noremap <Leader>r :NERDTreeToggle<Enter>
 noremap <Leader>f :NERDTreeFromBookmark 
 
 " Remove Ugly ass menu bar from MacVim
@@ -75,37 +73,31 @@ noremap <Leader>gu :GitPush<Enter>
 " Hex Color Highlighting
 noremap <Leader>h :call HexHighlight()<Return>
 
-" PHP Debugger
-noremap <Leader>d :python debugger_run()<Return>
+" Taglist
+noremap <Leader>a :TlistToggle<Return>
+
+" Gundo
+noremap <Leader>s :GundoToggle<Return>
+let g:gundo_width = 45
+let g:gundo_preview_height = 15
+let g:gundo_right = 0
 
 " Transmit Settings
 nnoremap <Leader>u :call TransmitFtpSendFile()<CR>
 
-" PHP Docs
-noremap <Leader>wp ! open http://php.net/<cword><CR>
-
 " jQuery Docs
-noremap <Leader>wj ! open http://api.jquery.com/<cword><CR>
+noremap <Leader>dj ! open http://api.jquery.com/<cword><CR>
 
 " MDC Lookup
-noremap <Leader>wm ! open https://developer.mozilla.org/en/JavaScript<CR> 
+noremap <Leader>dm ! open https://developer.mozilla.org/en/JavaScript<CR> 
 
 " Open Current File
 noremap <Leader>os ! open http://%<CR>
 
-" CoffeeScript Compiler
-let coffee_compile_on_save=1
-" au BufWritePost *.coffee silent !coffee -c <afile> &
-
 " Easy Motion
 let g:EasyMotion_leader_key = '<Leader>w'
 
-" JSLint Settings
-" au FileType javascript,jquery noremap <Leader>js :JSLintUpdate<CR>
-
 " Omni Completion
-" inoremap <D-e> <C-X><C-O>
-
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS 
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags 
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS 
@@ -119,7 +111,7 @@ noremap <Leader>c :ColorHEX<CR>
 autocmd Filetype mkd,markdown,md map <leader>p :Me<CR>
 
 " Zen Coding Settings
-" let g:user_zen_expandabbr_key='<C-e>'
+let g:user_zen_expandabbr_key = '<C-e>'
 
 " Filetype Settings
 filetype off " Stupid, necessary hack
@@ -133,3 +125,10 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 " Swap Files are annoying
 set backupdir=~/tmp/vim_swp
 set directory=~/tmp/vim_swp
+
+" ZoomWin configuration
+map <Leader><Leader> :ZoomWin<CR>
+set noequalalways
+
+" Taglist
+let g:tlist_javascript_settings = 'javascript;s:string;a:array;o:object;f:function'
