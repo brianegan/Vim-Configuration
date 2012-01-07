@@ -2,3 +2,4 @@
 *.swp
 *.netrwhist
 doc/tags
+_swp/*

@@ -123,8 +123,8 @@ filetype indent on
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P 
 
 " Swap Files are annoying
-set backupdir=~/tmp/vim_swp
-set directory=~/tmp/vim_swp
+set backupdir=~/.vim/_swp
+set directory=~/.vim/_swp
 
 " ZoomWin configuration
 map <Leader><Leader> :ZoomWin<CR>
