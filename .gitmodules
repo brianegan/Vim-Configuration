@@ -106,3 +106,9 @@
 	path = bundle/snipmate-snippets
 	url = https://github.com/honza/snipmate-snippets.git
   ignore = untracked
+[submodule "bundle/vim-handlebars"]
+	path = bundle/vim-handlebars
+	url = https://github.com/nono/vim-handlebars.git
+[submodule "bundle/vim-javascript"]
+	path = bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
