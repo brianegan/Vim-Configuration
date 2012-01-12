@@ -20,7 +20,8 @@ set ignorecase
 set smartcase
 
 " Don't lose undo history when changing buffers
-set hid
+set undodir=~/.vim/_undo
+set undofile
 
 " Wrapping makes Brian angry
 set nowrap
