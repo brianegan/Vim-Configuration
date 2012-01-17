@@ -82,10 +82,6 @@
 	path = bundle/gundo
 	url = http://github.com/sjl/gundo.vim.git
   ignore = untracked
-[submodule "bundle/handlebars"]
-	path = bundle/handlebars
-	url = https://github.com/nono/vim-handlebars.git
-  ignore = untracked
 [submodule "bundle/zencoding"]
 	path = bundle/zencoding
 	url = https://github.com/mattn/zencoding-vim.git
