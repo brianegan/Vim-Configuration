@@ -5,7 +5,7 @@ call pathogen#helptags()
 " Look n Feel: Syntax Highlighting, Line Numbers, Fonts, and Color Scheme
 syntax on
 set number
-colorscheme brocode
+colorscheme brogramming
 set guifont=Menlo:h12
 set ruler " Line & Column #
 set cursorline " Highlight current line

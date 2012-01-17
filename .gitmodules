@@ -60,7 +60,7 @@
   ignore = untracked
 [submodule "bundle/markdown"]
 	path = bundle/markdown
-	url = git@github.com:brianegan/vim-markdown.git
+	url = git://github.com:brianegan/vim-markdown.git
   ignore = untracked
 [submodule "bundle/jslint"]
 	path = bundle/jslint
@@ -112,3 +112,6 @@
 [submodule "bundle/vim-javascript"]
 	path = bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
+[submodule "bundle/brogramming"]
+	path = bundle/brogramming
+	url = git://github.com/brianegan/Brogramming.git
