@@ -111,3 +111,6 @@
 [submodule "bundle/brogramming"]
 	path = bundle/brogramming
 	url = git://github.com/brianegan/Brogramming.git
+[submodule "bundle/ftl-vim-syntax"]
+	path = bundle/ftl-vim-syntax
+	url = https://github.com/NateW/ftl-vim-syntax.git
