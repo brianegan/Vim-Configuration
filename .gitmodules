@@ -110,3 +110,7 @@
 	path = bundle/ftl-vim-syntax
 	url = https://github.com/NateW/ftl-vim-syntax.git
   ignore = untracked
+[submodule "bundle/cssrefresh-vim"]
+	path = bundle/cssrefresh-vim
+	url = git://github.com/brianegan/cssrefresh-vim.git
+  ignore = untracked
