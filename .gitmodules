@@ -62,10 +62,6 @@
 	path = bundle/markdown
 	url = git://github.com:brianegan/vim-markdown.git
   ignore = untracked
-[submodule "bundle/jslint"]
-	path = bundle/jslint
-	url = https://github.com/hallettj/jslint.vim.git
-  ignore = untracked
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim
@@ -76,7 +72,7 @@
   ignore = untracked
 [submodule "bundle/cssrefresh-vim"]
 	path = bundle/cssrefresh-vim
-	url = https://github.com/rstacruz/cssrefresh-vim.git
+	url = git://github.com/brianegan/cssrefresh-vim.git
   ignore = untracked
 [submodule "bundle/gundo"]
 	path = bundle/gundo
@@ -105,12 +101,16 @@
 [submodule "bundle/vim-handlebars"]
 	path = bundle/vim-handlebars
 	url = https://github.com/nono/vim-handlebars.git
+  ignore = untracked
 [submodule "bundle/vim-javascript"]
 	path = bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
+  ignore = untracked
 [submodule "bundle/brogramming"]
 	path = bundle/brogramming
 	url = git://github.com/brianegan/Brogramming.git
+  ignore = untracked
 [submodule "bundle/ftl-vim-syntax"]
 	path = bundle/ftl-vim-syntax
 	url = https://github.com/NateW/ftl-vim-syntax.git
+  ignore = untracked
