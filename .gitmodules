@@ -117,3 +117,5 @@
 [submodule "bundle/jshint"]
 	path = bundle/jshint
 	url = git://github.com/brianegan/jshint.vim.git
+  ignore = untracked
+[submodule "bundle/jshint"]
