@@ -70,10 +70,6 @@
 	path = bundle/zoomwin
 	url = https://github.com/vim-scripts/ZoomWin.git
   ignore = untracked
-[submodule "bundle/cssrefresh-vim"]
-	path = bundle/cssrefresh-vim
-	url = git://github.com/brianegan/cssrefresh-vim.git
-  ignore = untracked
 [submodule "bundle/gundo"]
 	path = bundle/gundo
 	url = http://github.com/sjl/gundo.vim.git
