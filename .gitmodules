@@ -121,3 +121,4 @@
 [submodule "bundle/vim-jasmine"]
 	path = bundle/vim-jasmine
 	url = https://github.com/thomd/vim-jasmine.git
+  ignore = untracked
