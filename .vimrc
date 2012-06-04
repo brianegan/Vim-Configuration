@@ -6,7 +6,7 @@ call pathogen#helptags()
 syntax on
 set number
 colorscheme brogramming
-set guifont=Menlo:h12
+set guifont=Droid\ Sans\ Mono:h12
 set ruler " Line & Column #
 set cursorline " Highlight current line
 
