@@ -94,10 +94,10 @@
 	path = bundle/vim-handlebars
 	url = https://github.com/nono/vim-handlebars.git
   ignore = untracked
-[submodule "bundle/vim-javascript"]
-	path = bundle/vim-javascript
-	url = https://github.com/pangloss/vim-javascript.git
-  ignore = untracked
+# [submodule "bundle/vim-javascript"]
+#	path = bundle/vim-javascript
+#	url = https://github.com/pangloss/vim-javascript.git
+#  ignore = untracked
 [submodule "bundle/brogramming"]
 	path = bundle/brogramming
 	url = git://github.com/brianegan/Brogramming.git

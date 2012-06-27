@@ -5,7 +5,7 @@ call pathogen#helptags()
 " Look n Feel: Syntax Highlighting, Line Numbers, Fonts, and Color Scheme
 syntax on
 set number
-colorscheme brogramming
+colorscheme twilight
 set guifont=Droid\ Sans\ Mono:h12
 set ruler " Line & Column #
 set cursorline " Highlight current line
@@ -128,7 +128,7 @@ set backupdir=~/.vim/_swp
 set directory=~/.vim/_swp
 
 " ZoomWin configuration
-map <Leader><Leader> :ZoomWin<CR>
+map <Leader>zz :ZoomWin<CR>
 set noequalalways
 
 " Taglist
