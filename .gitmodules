@@ -94,10 +94,10 @@
 	path = bundle/vim-handlebars
 	url = https://github.com/nono/vim-handlebars.git
   ignore = untracked
-[submodule "bundle/vim-javascript"]
-	path = bundle/vim-javascript
-	url = https://github.com/pangloss/vim-javascript.git
-  ignore = untracked
+# [submodule "bundle/vim-javascript"]
+#	path = bundle/vim-javascript
+#	url = https://github.com/pangloss/vim-javascript.git
+#  ignore = untracked
 [submodule "bundle/brogramming"]
 	path = bundle/brogramming
 	url = git://github.com/brianegan/Brogramming.git
@@ -117,4 +117,16 @@
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim
+  ignore = untracked
+[submodule "bundle/ack.vim"]
+	path = bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim.git
+  ignore = untracked
+[submodule "bundle/brinokai"]
+	path = bundle/brinokai
+	url = https://github.com/brianegan/molokai.git
+  ignore = untracked
+[submodule "bundle/vim-easymotion"]
+	path = bundle/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git
   ignore = untracked
