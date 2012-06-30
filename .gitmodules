@@ -126,7 +126,3 @@
 	path = bundle/brinokai
 	url = https://github.com/brianegan/molokai.git
   ignore = untracked
-[submodule "bundle/vim-easymotion"]
-	path = bundle/vim-easymotion
-	url = https://github.com/Lokaltog/vim-easymotion.git
-  ignore = untracked
