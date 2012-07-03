@@ -17,6 +17,7 @@ let s:grey_blue = '#8a9597'
 let s:light_grey_blue = '#a0a8b0'
 let s:dark_grey_blue = '#34383c'
 let s:mid_grey_blue = '#64686c'
+let s:blue = '#6f8aa9'
 let s:beige = '#ceb67f'
 let s:light_orange = '#ebc471'
 let s:yellow = '#e3d796'
@@ -86,8 +87,15 @@ exe 'hi Function       guifg='.s:violet            .' guibg='.s:darkgrey        
 exe 'hi PreProc        guifg='.s:grey_blue         .' guibg='.s:darkgrey        .' gui=none'
 exe 'hi Operator       guifg='.s:light_orange      .' guibg='.s:darkgrey        .' gui=none'
 exe 'hi Type           guifg='.s:yellow            .' guibg='.s:darkgrey        .' gui=italic'
+exe 'hi Number           guifg='.s:red            .' guibg='.s:darkgrey        .' gui=italic'
 
-hi Search guifg=#606000 guibg=#c0c000 gui=bold
+" JavaScript
+exe 'hi javaScriptNumber           guifg='.s:blue            .' guibg='.s:darkgrey        .' gui=italic'
+
+" CSS
+exe 'hi cssTagName           guifg='.s:blue            .' guibg='.s:darkgrey        .' gui=italic'
+
+hi Search guifg=#34383c guibg=#c0c000 gui=bold
 
 hi Directory guifg=#dad085 gui=NONE
 hi Error guibg=#602020
