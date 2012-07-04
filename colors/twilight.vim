@@ -95,6 +95,10 @@ exe 'hi javaScriptNumber           guifg='.s:blue            .' guibg='.s:darkgr
 " CSS
 exe 'hi cssTagName           guifg='.s:blue            .' guibg='.s:darkgrey        .' gui=italic'
 
+" Diffs
+exe 'hi diffAdded              guifg='.s:green            .' guibg='.s:darkgrey        .' gui=italic'
+exe 'hi diffRemoved            guifg='.s:red            .' guibg='.s:darkgrey        .' gui=italic'
+
 hi Search guifg=#34383c guibg=#c0c000 gui=bold
 
 hi Directory guifg=#dad085 gui=NONE
