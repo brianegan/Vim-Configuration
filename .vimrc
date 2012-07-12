@@ -126,6 +126,11 @@ filetype indent on
 " Fugitive Statusline
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P 
 
+" Syntastic
+set statusline+=%{SyntasticStatuslineFlag()}
+let g:syntastic_check_on_open=1
+let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': ['javascript', 'html'], 'passive_filetypes': ['css'] }
+
 " Swap Files are annoying
 set backupdir=~/.vim/_swp
 set directory=~/.vim/_swp

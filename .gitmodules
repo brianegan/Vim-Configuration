@@ -106,10 +106,6 @@
 	path = bundle/ftl-vim-syntax
 	url = https://github.com/NateW/ftl-vim-syntax.git
   ignore = untracked
-[submodule "bundle/jshint"]
-	path = bundle/jshint
-	url = git://github.com/brianegan/jshint.vim.git
-  ignore = untracked
 [submodule "bundle/jasmine"]
 	path = bundle/jasmine
 	url = git://github.com/claco/jasmine.vim.git
@@ -126,7 +122,15 @@
 	path = bundle/brinokai
 	url = https://github.com/brianegan/molokai.git
   ignore = untracked
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+  ignore = untracked
 [submodule "bundle/vim-easymotion"]
 	path = bundle/vim-easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
+  ignore = untracked
+[submodule "bundle/webapi-vim"]
+	path = bundle/webapi-vim
+	url = https://github.com/mattn/webapi-vim
   ignore = untracked
