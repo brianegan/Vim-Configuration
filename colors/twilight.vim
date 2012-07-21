@@ -60,7 +60,7 @@ exe 'hi NonText        guifg='.s:lightgrey         .' guibg='.s:darkgrey
 exe 'hi SpecialKey     guifg='.s:grey              .' guibg='.s:darkgrey
 
 exe 'hi LineNr         guifg='.s:dark_grey_blue     .' guibg='.s:darkgrey  .' gui=none'
-exe 'hi StatusLine     guifg='.s:white             .' guibg='.s:grey            .' gui=italic,underline'
+exe 'hi StatusLine     guifg='.s:grey_blue             .' guibg='.s:grey            .' gui=italic,underline'
 exe 'hi StatusLineNC   guifg='.s:lightgrey         .' guibg='.s:grey            .' gui=italic,underline'
 exe 'hi VertSplit      guifg='.s:grey              .' guibg='.s:grey            .' gui=none'
 
