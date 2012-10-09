@@ -12,7 +12,7 @@ elseif &t_Co == 256
   colorscheme ir_black
 endif
 
-set guifont=Droid\ Sans\ Mono:h12
+set guifont=Menlo:h14
 set ruler " Line & Column #
 set cursorline " Highlight current line
 
