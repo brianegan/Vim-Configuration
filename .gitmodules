@@ -137,6 +137,7 @@
 [submodule "bundle/stylus"]
 	path = bundle/stylus
 	url = https://github.com/wavded/vim-stylus.git
+  ignore = untracked
 [submodule "bundle/buffergator"]
 	path = bundle/buffergator
 	url = https://github.com/jeetsukumaran/vim-buffergator.git
