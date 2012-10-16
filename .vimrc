@@ -1,5 +1,5 @@
 " Kickoff Pathogen!
-call pathogen#runtime_append_all_bundles() 
+call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 " Look n Feel: Syntax Highlighting, Line Numbers, Fonts, and Color Scheme
@@ -12,7 +12,7 @@ elseif &t_Co == 256
   colorscheme ir_black
 endif
 
-set guifont=Droid\ Sans\ Mono:h12
+set guifont=Menlo:h12
 set ruler " Line & Column #
 set cursorline " Highlight current line
 
@@ -62,8 +62,14 @@ let g:gist_open_browser_after_post=1
 noremap <Leader>t :CommandT<Enter>
 let g:CommandTMaxHeight=15
 
-" BufExplorer
-let g:bufExplorerShowRelativePath=1
+" BufferGator
+let g:buffergator_viewport_split_policy="R"
+let g:buffergator_suppress_keymaps=1
+noremap <Leader>b :BuffergatorToggle<CR>
+
+" Supertab
+autocmd FileType css,style,sass let g:SuperTabDefaultCompletionType = "<C-x><C-o>"
+
 
 " NERDtree
 noremap <Leader>r :NERDTreeToggle<Enter>
@@ -73,9 +79,6 @@ noremap <Leader>f :NERDTreeFromBookmark
 if has("gui_running")
     set guioptions=egmrt
 endif
-
-" Git Push Keybinding (requires git plugin)
-noremap <Leader>gu :GitPush<Enter>
 
 " Hex Color Highlighting
 noremap <Leader>h :call HexHighlight()<Return>
@@ -125,6 +128,9 @@ filetype indent on
 
 " Fugitive Statusline
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P 
+
+" Indent Guides
+map <Leader>g :IndentGuidesToggle<CR>
 
 " Syntastic
 set statusline+=%{SyntasticStatuslineFlag()}
