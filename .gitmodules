@@ -134,6 +134,10 @@
 	path = bundle/webapi-vim
 	url = https://github.com/mattn/webapi-vim
   ignore = untracked
+[submodule "bundle/stylus"]
+	path = bundle/stylus
+	url = https://github.com/wavded/vim-stylus.git
+  ignore = untracked
 [submodule "bundle/buffergator"]
 	path = bundle/buffergator
 	url = https://github.com/jeetsukumaran/vim-buffergator.git
