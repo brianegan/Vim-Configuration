@@ -1,4 +1,3 @@
-[submodule "bundle/cucumber"]
 	path = bundle/cucumber
 	url = https://github.com/tpope/vim-cucumber.git
   ignore = untracked
@@ -101,10 +100,6 @@
 [submodule "bundle/brogramming"]
 	path = bundle/brogramming
 	url = git://github.com/brianegan/Brogramming.git
-  ignore = untracked
-[submodule "bundle/ftl-vim-syntax"]
-	path = bundle/ftl-vim-syntax
-	url = https://github.com/NateW/ftl-vim-syntax.git
   ignore = untracked
 [submodule "bundle/jasmine"]
 	path = bundle/jasmine
