@@ -154,7 +154,3 @@
 	path = bundle/indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides.git
   ignore = untracked
-[submodule "bundle/ftl-vim-syntax"]
-	path = bundle/ftl-vim-syntax
-	url = https://github.com/chaquotay/ftl-vim-syntax.git
-  ignore = untracked
