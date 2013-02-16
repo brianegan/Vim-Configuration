@@ -157,3 +157,6 @@
 [submodule "bundle/freemarker"]
 	path = bundle/freemarker
 	url = https://github.com/chaquotay/ftl-vim-syntax.git
+[submodule "bundle/unimpaired"]
+	path = bundle/unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
