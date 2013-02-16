@@ -1,3 +1,4 @@
+[submodule "bundle/cucumber"]
 	path = bundle/cucumber
 	url = https://github.com/tpope/vim-cucumber.git
   ignore = untracked
