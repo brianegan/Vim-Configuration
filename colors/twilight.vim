@@ -32,6 +32,7 @@ let s:white = '#fffedc'
 
 if version >= 700
   hi CursorLine guibg=#1f2226
+  hi CursorLineNr term=bold guifg=#64686c
   hi CursorColumn guibg=#262626
   hi MatchParen guifg=#ebc471 guibg=NONE gui=bold
 
@@ -102,7 +103,7 @@ exe 'hi stylusClass          guifg='.s:grey_blue            .' guibg='.s:darkgre
 exe 'hi diffAdded              guifg='.s:green            .' guibg='.s:darkgrey        .' gui=italic'
 exe 'hi diffRemoved            guifg='.s:red            .' guibg='.s:darkgrey        .' gui=italic'
 
-hi Search guifg=#34383c guibg=#c0c000 gui=bold
+hi Search guifg=#34383c guibg=#e3d796 gui=bold
 
 hi Directory guifg=#dad085 gui=NONE
 hi Error guibg=#602020
