@@ -91,6 +91,11 @@ exe 'hi Number           guifg='.s:red            .' guibg='.s:darkgrey        .
 
 " JavaScript
 exe 'hi javaScriptNumber           guifg='.s:blue            .' guibg='.s:darkgrey        .' gui=italic'
+exe 'hi javaScriptDocType           guifg='.s:mid_grey_blue            .' guibg='.s:darkgrey        .' gui=italic'
+exe 'hi javaScriptDocParam           guifg='.s:mid_grey_blue            .' guibg='.s:darkgrey        .' gui=italic'
+exe 'hi javaScriptDocTags           guifg='.s:mid_grey_blue            .' guibg='.s:darkgrey        .' gui=italic'
+exe 'hi javaScriptType           guifg='.s:grey_blue            .' guibg='.s:darkgrey        .' gui=italic'
+
 
 " CSS
 exe 'hi cssTagName           guifg='.s:blue            .' guibg='.s:darkgrey        .' gui=italic'
