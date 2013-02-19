@@ -67,10 +67,6 @@ let g:buffergator_viewport_split_policy="R"
 let g:buffergator_suppress_keymaps=1
 noremap <Leader>b :BuffergatorToggle<CR>
 
-" Supertab
-autocmd FileType css,style,sass let g:SuperTabDefaultCompletionType = "<C-x><C-o>"
-
-
 " NERDtree
 noremap <Leader>r :NERDTreeToggle<Enter>
 noremap <Leader>f :NERDTreeFromBookmark 
