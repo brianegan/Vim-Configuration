@@ -101,10 +101,10 @@ noremap <Leader>dm ! open https://developer.mozilla.org/en/JavaScript<CR>
 noremap <Leader>os ! open http://%<CR>
 
 " Omni Completion
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS 
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags 
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS 
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete 
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 " ColorHex
@@ -127,6 +127,7 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 " Indent Guides
 map <Leader>g :IndentGuidesToggle<CR>
+let g:indent_guides_guide_size = 1
 
 " Syntastic
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -143,3 +144,6 @@ set noequalalways
 
 " Taglist
 let g:tlist_javascript_settings = 'javascript;s:string;a:array;o:object;f:function'
+
+" Shitty Freemarker
+au BufEnter *.ftl,*.zml setfiletype html
