@@ -101,7 +101,8 @@ noremap <Leader>dm ! open https://developer.mozilla.org/en/JavaScript<CR>
 noremap <Leader>os ! open http://%<CR>
 
 " Omni Completion
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+inoremap <D-d> <C-X><C-O>
+autocmd FileType css,sass,scss setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
