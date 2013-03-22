@@ -99,11 +99,21 @@ exe 'hi javaScriptType           guifg='.s:grey_blue            .' guibg='.s:dar
 
 
 " CSS
-exe 'hi cssTagName           guifg='.s:blue            .' guibg='.s:darkgrey        .' gui=italic'
+exe 'hi cssTagName           guifg='.s:light_grey_blue            .' guibg='.s:darkgrey        .' gui=italic'
 
 " Stylus
 exe 'hi stylusClass          guifg='.s:grey_blue            .' guibg='.s:darkgrey        .' gui=italic'
 
+" Sass
+exe 'hi sassClass          guifg='.s:grey_blue            .' guibg='.s:darkgrey        .' gui=italic'
+exe 'hi sassIdChar          guifg='.s:grey_blue            .' guibg='.s:darkgrey        .' gui=italic'
+exe 'hi sassClassChar          guifg='.s:grey_blue            .' guibg='.s:darkgrey        .' gui=italic'
+exe 'hi sassVariable           guifg='.s:violet            .' guibg='.s:darkgrey        .' gui=italic'
+exe 'hi sassExtend           guifg='.s:light_orange            .' guibg='.s:darkgrey        .' gui=italic'
+exe 'hi Type           guifg='.s:white            .' guibg='.s:darkgrey        .' gui=italic'
+exe 'hi Number           guifg='.s:white            .' guibg='.s:darkgrey        .' gui=italic'
+exe 'hi StorageClass           guifg='.s:yellow            .' guibg='.s:darkgrey        .' gui=italic'
+exe 'hi sassInclude           guifg='.s:lightgreen            .' guibg='.s:darkgrey        .' gui=italic'
 
 " Diffs
 exe 'hi diffAdded              guifg='.s:green            .' guibg='.s:darkgrey        .' gui=italic'
