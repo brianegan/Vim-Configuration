@@ -165,3 +165,9 @@
 	path = bundle/javascript
 	url = https://github.com/pangloss/vim-javascript.git
   ignore = untracked
+[submodule "bundle/jade"]
+	path = bundle/jade
+	url = https://github.com/digitaltoad/vim-jade.git
+[submodule "bundle/auto-pairs"]
+	path = bundle/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
